@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derechos Humanos de Segunda Generación</title>
+  <meta name="description"
+    content="Presentación sobre los Derechos Humanos de Segunda Generación: Igualdad, Estado de Bienestar y Condiciones de Vida Dignas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Animated background particles -->
+  <div class="bg-particles" id="particles"></div>
+
+  <!-- Progress bar -->
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- Slide counter -->
+  <div class="slide-counter" id="slideCounter">1 / 11</div>
+
+  <!-- Navigation buttons -->
+  <button class="nav-btn nav-prev" id="prevBtn" aria-label="Diapositiva anterior">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button class="nav-btn nav-next" id="nextBtn" aria-label="Siguiente diapositiva">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Slide indicators -->
+  <div class="slide-indicators" id="slideIndicators"></div>
+
+  <!-- ========== SLIDES ========== -->
+  <div class="slides-container" id="slidesContainer">
+
+    <!-- Slide 1: Portada -->
+    <section class="slide slide-active" data-slide="0" data-theme="hero">
+      <div class="slide-content slide-hero">
+        <div class="hero-badge">Presentación Académica</div>
+        <img src="images/hero_rights.png" alt="Derechos Humanos ilustración" class="hero-image">
+        <h1 class="hero-title">
+          Derechos Humanos<br>
+          <span class="gradient-text">de Segunda Generación</span>
+        </h1>
+        <p class="hero-subtitle">Igualdad, Estado de Bienestar y Condiciones de Vida Dignas</p>
+        <div class="hero-divider"></div>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-icon">👥</span>
+            <span class="meta-label">Integrantes</span>
+            <span class="meta-value">Marco Martínez, Jose Lezama, Kevin Blanco</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-icon">📚</span>
+            <span class="meta-label">Materia</span>
+            <span class="meta-value">Derecho Constitucional</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-icon">📅</span>
+            <span class="meta-label">Fecha</span>
+            <span class="meta-value">1 de abril de 2026</span>
+          </div>
+        </div>
+        <div class="scroll-hint">
+          <span>Presiona <kbd>→</kbd> o haz clic en la flecha para comenzar</span>
+          <div class="scroll-arrow">›</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: ¿Qué son? -->
+    <section class="slide" data-slide="1" data-theme="definition">
+      <div class="slide-content">
+        <div class="slide-number">02</div>
+        <h2 class="slide-title">¿Qué son los Derechos <span class="highlight">de Segunda Generación</span>?</h2>
+        <div class="content-grid two-cols">
+          <div class="glass-card accent-purple card-animate" data-delay="0">
+            <div class="card-icon">⚖️</div>
+            <h3>Derechos DESC</h3>
+            <p>Son derechos <strong>económicos, sociales y culturales</strong>. Su objetivo principal es garantizar la
+              igualdad y condiciones de vida dignas para todos.</p>
+          </div>
+          <div class="glass-card accent-pink card-animate" data-delay="1">
+            <div class="card-icon">🏗️</div>
+            <h3>Fundamento</h3>
+            <p>Están fundamentados en garantizar el acceso a <strong>bienes, servicios y oportunidades</strong> sociales
+              fundamentales.</p>
+          </div>
+        </div>
+        <div class="callout-box card-animate" data-delay="2">
+          <div class="callout-icon">💡</div>
+          <p>A diferencia de la visión puramente individualista, su fin último es procurar la <strong>mejor condición de
+              vida posible</strong> para las personas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: Origen e Historia -->
+    <section class="slide" data-slide="2" data-theme="history">
+      <div class="slide-content">
+        <div class="slide-number">03</div>
+        <h2 class="slide-title">Origen y <span class="highlight">Contexto Histórico</span></h2>
+        <img src="images/history_timeline.png" alt="Revolución Industrial y cambio social"
+          class="slide-image card-animate" data-delay="0">
+        <div class="timeline">
+          <div class="timeline-item card-animate" data-delay="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Siglo XIX</div>
+            <div class="timeline-content">
+              <h3>Revolución Industrial</h3>
+              <p>Emergieron con fuerza tras las profundas desigualdades provocadas por la industrialización.</p>
+            </div>
+          </div>
+          <div class="timeline-item card-animate" data-delay="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">1917 – 1919</div>
+            <div class="timeline-content">
+              <h3>Primeros Hitos Legales</h3>
+              <p>La <strong>Constitución mexicana de 1917</strong> y la <strong>Constitución de Weimar</strong> (1919)
+                marcaron los primeros reconocimientos.</p>
+            </div>
+          </div>
+          <div class="timeline-item card-animate" data-delay="2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">1945</div>
+            <div class="timeline-content">
+              <h3>Posguerra Mundial</h3>
+              <p>Surgen como resultado directo de la II Guerra Mundial y la victoria de la coalición antifascista.</p>
+            </div>
+          </div>
+          <div class="timeline-item card-animate" data-delay="3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Posguerra</div>
+            <div class="timeline-content">
+              <h3>Estado de Bienestar</h3>
+              <p>Se ligan al desarrollo del estado de bienestar y las constituciones antifascistas de Francia, Italia y
+                Alemania.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: Papel del Estado -->
+    <section class="slide" data-slide="3" data-theme="state">
+      <div class="slide-content">
+        <div class="slide-number">04</div>
+        <h2 class="slide-title">El Papel <span class="highlight">Activo del Estado</span></h2>
+        <div class="comparison-container card-animate" data-delay="0">
+          <div class="comparison-card glass-card">
+            <div class="comparison-header negative">
+              <span class="comparison-gen">1ª Generación</span>
+              <h3>No Intervención</h3>
+            </div>
+            <p>La primera generación exigía que el Estado <strong>"no interviniera"</strong> en las libertades
+              individuales.</p>
+            <div class="comparison-icon">🚫</div>
+          </div>
+          <div class="comparison-arrow">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+          <div class="comparison-card glass-card">
+            <div class="comparison-header positive">
+              <span class="comparison-gen">2ª Generación</span>
+              <h3>Obligación Positiva</h3>
+            </div>
+            <p>Imponen al gobierno el <strong>deber de respetar, promover y aplicar</strong> activamente estos derechos.
+            </p>
+            <div class="comparison-icon">✅</div>
+          </div>
+        </div>
+        <div class="content-grid with-image card-animate" data-delay="1">
+          <div class="callout-box">
+            <div class="callout-icon">🏛️</div>
+            <p>Solo la <strong>acción positiva</strong> de un gobierno democrático, a través del estado de bienestar,
+              puede garantizar su ejercicio real.</p>
+          </div>
+          <img src="images/state_role.png" alt="Papel del Estado" class="slide-image-side">
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: Progresividad -->
+    <section class="slide" data-slide="4" data-theme="progress">
+      <div class="slide-content">
+        <div class="slide-number">05</div>
+        <h2 class="slide-title">Progresividad y <span class="highlight">Disponibilidad de Recursos</span></h2>
+        <div class="content-grid two-cols">
+          <div class="glass-card accent-coral card-animate" data-delay="0">
+            <div class="card-icon">🔴</div>
+            <h3>"Derechos Rojos"</h3>
+            <p>Históricamente conocidos así, su aplicación exige que los Estados actúen de <strong>manera
+                progresiva</strong> y dependiendo directamente de la disponibilidad de recursos públicos.</p>
+          </div>
+          <div class="glass-card accent-teal card-animate" data-delay="1">
+            <div class="card-icon">📈</div>
+            <h3>Avance Continuo</h3>
+            <p>El Estado debe avanzar continuamente hacia su cumplimiento total, <strong>prohibiéndose los retrocesos
+                injustificados</strong>.</p>
+          </div>
+        </div>
+        <div class="quote-box card-animate" data-delay="2">
+          <div class="quote-mark">"</div>
+          <blockquote>
+            En 1944, el presidente <strong>Roosevelt</strong> propuso crear una segunda <em>Bill of Rights</em> (Carta
+            de Derechos), evidenciando la importancia de estas garantías estatales.
+          </blockquote>
+          <cite>— Franklin D. Roosevelt, 1944</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 6: Fundamentos Filosóficos -->
+    <section class="slide" data-slide="5" data-theme="philosophy">
+      <div class="slide-content">
+        <div class="slide-number">06</div>
+        <h2 class="slide-title">Fundamentos <span class="highlight">Políticos y Filosóficos</span></h2>
+        <img src="images/philosophy_justice.png" alt="Filosofía y justicia" class="slide-image card-animate"
+          data-delay="0">
+        <div class="philosophy-grid">
+          <div class="glass-card accent-purple philosophy-card card-animate" data-delay="0">
+            <div class="philosophy-icon">🏛️</div>
+            <h3>Republicanismo Moderno</h3>
+            <p>La defensa de los derechos de segunda generación constituye la <strong>base del republicanismo
+                moderno</strong> como teoría política.</p>
+          </div>
+          <div class="glass-card accent-gold philosophy-card card-animate" data-delay="1">
+            <div class="philosophy-icon">🎓</div>
+            <h3>Jeremy Waldron</h3>
+            <p>El compromiso con las libertades políticas y civiles <strong>exige preocuparse</strong> por las
+              condiciones de vida que permiten disfrutarlas.</p>
+          </div>
+          <div class="glass-card accent-pink philosophy-card card-animate" data-delay="2">
+            <div class="philosophy-icon">🔗</div>
+            <h3>Libertad Real</h3>
+            <p>La libertad de elegir <strong>carece de sentido</strong> si la persona se encuentra en una situación de
+              miseria donde su elección no tiene impacto real.</p>
+          </div>
+          <div class="glass-card accent-teal philosophy-card card-animate" data-delay="3">
+            <div class="philosophy-icon">📊</div>
+            <h3>Karl Polanyi</h3>
+            <p>El mercado por sí solo <strong>concentra la riqueza</strong>, polariza la sociedad y acaba degradando los
+              derechos civiles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: Instrumentos Internacionales -->
+    <section class="slide" data-slide="6" data-theme="treaties">
+      <div class="slide-content">
+        <div class="slide-number">07</div>
+        <h2 class="slide-title">Instrumentos y <span class="highlight">Tratados Internacionales</span></h2>
+        <img src="images/treaties_globe.png" alt="Tratados internacionales" class="slide-image card-animate"
+          data-delay="0">
+        <div class="treaties-flow">
+          <div class="treaty-card glass-card accent-purple card-animate" data-delay="0">
+            <div class="treaty-year">1948</div>
+            <h3>Declaración Universal de DDHH</h3>
+            <p>Diversos derechos de segunda generación ya estaban esbozados en los <strong>artículos 22 al 27</strong>.
+            </p>
+            <div class="treaty-badge">Fundación</div>
+          </div>
+          <div class="treaty-connector card-animate" data-delay="1">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+          </div>
+          <div class="treaty-card glass-card accent-pink card-animate" data-delay="1">
+            <div class="treaty-year">1966</div>
+            <h3>Pacto Internacional DESC</h3>
+            <p>Desarrollados a profundidad en el Pacto Internacional de Derechos Económicos, Sociales y Culturales.
+              <strong>Entró en vigor en 1976</strong>.
+            </p>
+            <div class="treaty-badge">Desarrollo</div>
+          </div>
+          <div class="treaty-connector card-animate" data-delay="2">
+            <div class="connector-line"></div>
+            <div class="connector-dot"></div>
+          </div>
+          <div class="treaty-card glass-card accent-teal card-animate" data-delay="2">
+            <div class="treaty-year">2008</div>
+            <h3>Protocolo Opcional</h3>
+            <p>Naciones Unidas adoptó el Protocolo que busca establecer un <strong>órgano de seguimiento y
+                defensa</strong> similar al Consejo de DDHH.</p>
+            <div class="treaty-badge">Protección</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 8: Derechos Parte I -->
+    <section class="slide" data-slide="7" data-theme="rights">
+      <div class="slide-content">
+        <div class="slide-number">08</div>
+        <h2 class="slide-title">Principales Derechos <span class="highlight">Reconocidos (I)</span></h2>
+        <div class="rights-grid">
+          <div class="right-card glass-card accent-purple card-animate" data-delay="0">
+            <div class="right-icon-large">💼</div>
+            <h3>Derecho al Trabajo</h3>
+            <ul class="right-details">
+              <li>Acceso a un <strong>trabajo decente</strong> (OIT)</li>
+              <li>Salario justo y equitativo</li>
+              <li>Derecho a pertenecer a un <strong>sindicato</strong></li>
+            </ul>
+          </div>
+          <div class="right-card glass-card accent-teal card-animate" data-delay="1">
+            <div class="right-icon-large">🎓</div>
+            <h3>Derecho a la Educación</h3>
+            <ul class="right-details">
+              <li>Formación básica garantizada</li>
+              <li>Motor de <strong>equidad social</strong></li>
+              <li>Acceso universal e igualitario</li>
+            </ul>
+          </div>
+          <div class="right-card glass-card accent-coral card-animate" data-delay="2">
+            <div class="right-icon-large">🏥</div>
+            <h3>Derecho a la Salud</h3>
+            <ul class="right-details">
+              <li>Acceso a <strong>sanidad</strong> universal</li>
+              <li>Nivel físico más alto posible</li>
+              <li>Bienestar <strong>psicológico</strong></li>
+            </ul>
+          </div>
+        </div>
+        <img src="images/rights_work.png" alt="Derecho al trabajo, educación y salud" class="slide-image card-animate"
+          data-delay="3" style="margin-top:1.2rem; max-height:160px;">
+      </div>
+    </section>
+
+    <!-- Slide 9: Derechos Parte II -->
+    <section class="slide" data-slide="8" data-theme="rights2">
+      <div class="slide-content">
+        <div class="slide-number">09</div>
+        <h2 class="slide-title">Principales Derechos <span class="highlight">Reconocidos (II)</span></h2>
+        <div class="rights-grid">
+          <div class="right-card glass-card accent-gold card-animate" data-delay="0">
+            <div class="right-icon-large">🛡️</div>
+            <h3>Seguridad Social</h3>
+            <ul class="right-details">
+              <li>Protección ante <strong>contingencias</strong></li>
+              <li>Cobertura de salud y vejez</li>
+              <li>Protección contra el <strong>desempleo</strong></li>
+            </ul>
+          </div>
+          <div class="right-card glass-card accent-pink card-animate" data-delay="1">
+            <div class="right-icon-large">🏠</div>
+            <h3>Nivel de Vida Digno</h3>
+            <ul class="right-details">
+              <li>Libertad del <strong>hambre</strong></li>
+              <li>Alimentación adecuada</li>
+              <li>Derecho a <strong>vivienda digna</strong></li>
+            </ul>
+          </div>
+          <div class="right-card glass-card accent-sky card-animate" data-delay="2">
+            <div class="right-icon-large">🎭</div>
+            <h3>Cultura y Equidad</h3>
+            <ul class="right-details">
+              <li>Participación en la <strong>vida cultural</strong></li>
+              <li>Igualdad de género estructural</li>
+              <li>Acceso a la <strong>ciencia y arte</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10: Interdependencia -->
+    <section class="slide" data-slide="9" data-theme="interdependence">
+      <div class="slide-content">
+        <div class="slide-number">10</div>
+        <h2 class="slide-title">La <span class="highlight">Interdependencia</span> de los Derechos</h2>
+        <div class="interdependence-visual card-animate" data-delay="0">
+          <div class="circle-container">
+            <div class="circle circle-first">
+              <span>1ª Gen</span>
+              <small>Civiles y Políticos</small>
+            </div>
+            <div class="circle-overlap">
+              <span>🔗</span>
+              <small>Interdependencia</small>
+            </div>
+            <div class="circle circle-second">
+              <span>2ª Gen</span>
+              <small>Económicos, Sociales y Culturales</small>
+            </div>
+          </div>
+        </div>
+        <div class="content-grid two-cols">
+          <div class="glass-card accent-purple card-animate" data-delay="1">
+            <div class="card-icon">🔄</div>
+            <h3>Complementarios</h3>
+            <p>Los DESC garantizan la <strong>base material</strong> para que el ejercicio de las libertades
+              fundamentales sea real y en igualdad de condiciones.</p>
+          </div>
+          <div class="glass-card accent-coral card-animate" data-delay="2">
+            <div class="card-icon">⚠️</div>
+            <h3>Sin Base Material</h3>
+            <p>La falta de derechos de segunda generación provoca la <strong>violación sistemática</strong> de los
+              derechos civiles y políticos de primera generación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 11: Cierre -->
+    <section class="slide" data-slide="10" data-theme="closing">
+      <div class="slide-content slide-hero">
+        <div class="hero-badge">Cierre</div>
+        <h1 class="hero-title closing-title">
+          ¡Gracias por su<br>
+          <span class="gradient-text">atención!</span>
+        </h1>
+        <div class="hero-divider"></div>
+        <div class="closing-quote">
+          <div class="quote-mark">"</div>
+          <blockquote>
+            Garantizar la libertad política requiere, ineludiblemente, garantizar las <strong>condiciones
+              materiales</strong> para ejercerla.
+          </blockquote>
+        </div>
+        <p class="closing-message">Quedamos a su disposición para cualquier duda, pregunta o comentario.</p>
+        <div class="closing-decoration">
+          <span>⚖️</span>
+          <span>🌍</span>
+          <span>🤝</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Keyboard hint overlay -->
+  <div class="keyboard-hint" id="keyboardHint">
+    <div class="hint-content glass-card">
+      <h3>Navegación</h3>
+      <div class="hint-keys">
+        <div class="hint-key"><kbd>←</kbd><span>Anterior</span></div>
+        <div class="hint-key"><kbd>→</kbd><span>Siguiente</span></div>
+        <div class="hint-key"><kbd>Esc</kbd><span>Índice</span></div>
+      </div>
+      <p>También puedes usar las flechas laterales, los indicadores inferiores<br>o deslizar en pantalla táctil</p>
+      <button class="hint-close" id="hintClose">¡Entendido!</button>
+    </div>
+  </div>
+
+  <!-- Slide overview (mini-map) -->
+  <div class="slide-overview" id="slideOverview">
+    <div class="overview-backdrop" id="overviewBackdrop"></div>
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
